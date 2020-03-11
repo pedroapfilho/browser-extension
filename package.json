@@ -1,0 +1,22 @@
+{
+  "name": "browser-extension",
+  "version": "1.0.0",
+  "repository": "git@github.com:pedroapfilho/browser-extension.git",
+  "author": "Pedro Filho <pedro@filho.me>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "yarn clear && webpack --config webpack/webpack.prod.js",
+    "clear": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.99",
+    "copy-webpack-plugin": "^5.1.1",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  }
+}
