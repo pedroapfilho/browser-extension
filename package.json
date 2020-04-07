@@ -10,12 +10,12 @@
     "clear": "rimraf dist"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.99",
+    "@types/chrome": "^0.0.103",
     "copy-webpack-plugin": "^5.1.1",
     "rimraf": "^3.0.2",
-    "ts-loader": "^6.2.1",
+    "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.0",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"
   }
