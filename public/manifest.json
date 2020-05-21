@@ -11,11 +11,18 @@
   },
   "browser_action": {
     "default_icon": "icons/icon128.png",
-    "default_title": "Browser Extension"
+    "default_title": "Browser Extension",
+    "default_popup": "popup.html"
   },
   "background": {
     "scripts": ["background.js"]
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "options_ui": {
     "page": "options.html",
     "open_in_tab": true
@@ -23,5 +30,5 @@
   "chrome_url_overrides": {
     "newtab": "newTab.html"
   },
-  "permissions": ["tabs", "<all_urls>", "storage"]
+  "permissions": ["activeTab", "tabs", "<all_urls>", "storage"]
 }

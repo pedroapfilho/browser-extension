@@ -5,8 +5,10 @@ const srcDir = "../src/";
 module.exports = {
   entry: {
     background: path.join(__dirname, srcDir + "background.ts"),
-    options: path.join(__dirname, srcDir + "options.ts"),
+    content: path.join(__dirname, srcDir + "content.ts"),
     newTab: path.join(__dirname, srcDir + "newTab.ts"),
+    options: path.join(__dirname, srcDir + "options.ts"),
+    popup: path.join(__dirname, srcDir + "popup.ts"),
   },
   output: {
     path: path.join(__dirname, "../dist"),
@@ -28,7 +30,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts"],
   },
   plugins: [
     new CopyPlugin({
