@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     background: path.join(__dirname, srcDir + "background.ts"),
     options: path.join(__dirname, srcDir + "options.ts"),
+    newTab: path.join(__dirname, srcDir + "newTab.ts"),
   },
   output: {
     path: path.join(__dirname, "../dist"),
